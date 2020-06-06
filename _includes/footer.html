@@ -1,0 +1,14 @@
+<footer class="footer user-select-none py-4" id="footer">
+  <div class="container">
+    <ul class="list-inline">
+      {%- for social in site.data.socials -%}
+      <li class="list-inline-item"><a href="{{ social.url }}" title="{{ social.name }}">{% include icons/{{ social.icon }} %}<span class="sr-only">{{ social.name }}</span></a></li>{%- endfor -%}
+    </ul>
+    {% capture license %}{% include icons/creative-commons.svg %}{% include icons/creative-commons-by.svg %}{% include icons/creative-commons-sa.svg %}{% endcapture %}
+    <hr/>
+    <div class="d-flex justify-content-between">
+      <span>Copyright &copy; 1998-{{ site.time | date: "%Y" }} bugzilla.org contributors</span>
+      <span class="copyright"><span class="sr-only">Creative Commons Attribution-ShareAlike 2.0</span><a rel="license" href="https://creativecommons.org/licenses/by-sa/2.0/">{{ license | strip_newlines }}</a><span>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,13 @@
+{% assign output = "" %}
+{% if include.authors %}
+  {% assign links = "" %}
+  {% for author in include.authors %}
+    {% assign profile = site.developers | where: "nickname", author | first %}
+    {% capture link %}<a class="text-muted" href="/developers/{{ profile.nickname }}">{{ profile.firstname }} {{ profile.lastname }} ({{ profile.nickname }})</a>,{% endcapture %}
+    {% assign links = links | append: link %}
+  {% endfor %}
+  {% assign output = links | split: ',' | array_to_sentence_string %}
+{% else %}
+  {% capture output %}<a href="/developers">Bugzilla Team</a>{% endcapture %}
+{% endif %}
+<p class="text-muted">by {{ output }}</p>

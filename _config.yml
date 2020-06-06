@@ -1,0 +1,16 @@
+title: Bugzilla
+email: developers@bugzilla.org
+description: ""
+baseurl: ""
+url: ""
+
+sass:
+  sass_dir: _scss
+
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

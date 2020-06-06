@@ -1,0 +1,65 @@
+.navbar-dark.bg-bugzilla form[role="search"] {
+  color: rgb(240, 241, 242);
+}
+.footer {
+  background-color: rgb(50, 51, 52);
+}
+pre.highlight, code {
+  background-color: $gray-800;
+  color: $body-color;
+  border: 1px solid $gray-700;
+}
+
+pre code {
+  border: none;
+  margin: none;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm,
+.highlight .cpf, .highlight .c1, .highlight .cs, .highlight .kt,
+.highlight .no, .highlight .nc, .highlight .nd, .highlight .bp,
+.highlight .ne, .highlight .gi, .highlight .cp, .highlight .ni,
+.highlight .w, .highlight .go, .highlight .gl, .highlight .gt {
+  color: hsl(30, 20%, 50%);
+}
+.highlight .err {
+  background-color: $red;
+}
+.highlight .gr, .highlight .gd {
+  color: $red;
+}
+.highlight .kd, .highlight .kv, .highlight .nb {
+  color: hsl(350, 40%, 70%);
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm,
+.highlight .c1, .highlight .cs, .highlight .ge, .highlight .gr,
+.highlight .cpf, {
+  font-style: italic;
+}
+.highlight .m, .highlight .mb, .highlight .mh,
+.highlight .mi, .highlight .il, .highlight .mo, .highlight .mx,
+.highlight .ld, .highlight .ss, .highlight .kc {
+  color: hsl(350, 40%, 70%);
+}
+.highlight .s, .highlight .sa, .highlight .sb, .highlight .dl,
+.highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx,
+.highlight .s1, .highlight .mf {
+  color: hsl(75, 70%, 60%);
+}
+.highlight .o {
+  color: hsl(40, 90%, 60%);
+}
+.highlight .fm, .highlight .py, .highlight .na, .highlight .vc,
+.highlight .vg, .highlight .vi, .highlight .nv, .highlight .vm,
+.highlight .gp, .highlight .sr, .highlight .kn, .highlight .kp,
+.highlight .kr, .highlight .gh, .highlight .gu, .highlight .nl,
+.highlight .nt {
+  color: hsl(40, 90%, 60%);
+}
+.highlight .nf {
+  color: inherit;
+}
+
+blockquote {
+  border-left: 0.25rem solid $gray-600;
+  background: $gray-900;
+}
