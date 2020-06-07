@@ -4,7 +4,7 @@
       {%- for social in site.data.socials -%}
       <li class="list-inline-item"><a href="{{ social.url }}" title="{{ social.name }}">{% include icons/{{ social.icon }} %}<span class="sr-only">{{ social.name }}</span></a></li>{%- endfor -%}
     </ul>
-    {% capture license %}{% include icons/creative-commons.svg %}{% include icons/creative-commons-by.svg %}{% include icons/creative-commons-sa.svg %}{% endcapture %}
+    {% capture license %}{% include icons/creative-commons.svg size="24" %}{% include icons/creative-commons-by.svg size="24" %}{% include icons/creative-commons-sa.svg size="24" %}{% endcapture %}
     <hr/>
     <div class="d-flex justify-content-between">
       <span>Copyright &copy; 1998-{{ site.time | date: "%Y" }} bugzilla.org contributors</span>
