@@ -39,6 +39,9 @@
       <link defer rel="stylesheet" type="text/css" href="{{ addon.link }}" {% if addon.media %}media="{{ addon.media }}"{% endif %}>
     {% endcase %}
   {% endfor %}
+  {% for meta in page.meta %}
+    <{{ meta.type }} {{ meta.tags }}>
+  {% endfor %}
   <link color="#9248c8" href="/assets/favicon/mask-icon.svg" rel="mask-icon">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:title" content="{{ title }}">
