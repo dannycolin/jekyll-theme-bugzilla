@@ -1,5 +1,5 @@
 {% assign output = "" %}
-{% if include.authors != '' %}
+{% if include.authors != nil %}
   {% assign links = "" %}
   {% for author in include.authors %}
     {% assign profile = site.developers | where: "nickname", author | first %}
