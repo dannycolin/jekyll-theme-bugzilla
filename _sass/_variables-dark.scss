@@ -118,8 +118,9 @@ $input-group-addon-bg:                  $input-bg !default;
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   rgb(30, 31, 32) !default;
-$body-color:                rgb(210, 211, 212) !default;
+$body-bg:                           rgb(30, 31, 32) !default;
+$body-color:                        rgb(210, 211, 212) !default;
+$pre-color:                         $body-color !default;
 $list-group-bg:                     rgb(40, 41, 42) !default;
 $list-group-hover-bg:               $gray-700 !default;
 $list-group-disabled-color:         $gray-800 !default;
