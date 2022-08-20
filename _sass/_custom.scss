@@ -114,3 +114,8 @@ blockquote {
     -webkit-appearance: none;
     -moz-appearance: none;
 }
+
+.card-body img {
+  max-width: 100%;
+  height: auto;
+}
