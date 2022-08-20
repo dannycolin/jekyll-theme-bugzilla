@@ -52,7 +52,9 @@
   <div class="container">
     <ol class="breadcrumb m-0 p-0 flex-nowrap">
       {% for breadcrumb in page.breadcrumbs %}
+      {% if forloop.last != true or breadcrumb.name != page.title %}
       <li class="breadcrumb-item"><a href="{{ breadcrumb.link }}">{{ breadcrumb.name }}</a></li>
+      {% endif %}
       {% endfor %}
       <li class="breadcrumb-item active text-nowrap pr-3" aria-current="page">{{ page.title }}</li>
     </ol>
