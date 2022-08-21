@@ -119,3 +119,16 @@ blockquote {
   max-width: 100%;
   height: auto;
 }
+
+.req_new::after {
+  content: "● new";
+  font-weight: bold;
+  border: 1px solid $red;
+  padding: 0.125rem;
+  font-size: 0.65rem;
+  border-radius: 0.25rem;
+  color: $red;
+  background-color: lighten($red, 80%);
+  vertical-align: middle;
+  margin-left: 0.25rem;
+}
