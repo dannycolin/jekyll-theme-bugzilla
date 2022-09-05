@@ -51,6 +51,7 @@ h4 { font-size: var(--font-size-h4) }
 #header.sticky {
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
 #header .inner {
@@ -66,13 +67,11 @@ h4 { font-size: var(--font-size-h4) }
   color: var(--application-header-foreground-color);
   font-weight: bold;
   text-decoration: none;
-  transition: font-size 0.5s;
 }
 
 #header-logo {
   width: 32px;
   height: 48px;
-  transition: width 0.5s, height 0.5s;
   margin-right: 4px;
 }
 
@@ -149,6 +148,10 @@ h4 { font-size: var(--font-size-h4) }
   color: white!important;
 }
 
+.bg-bugzilla a.button {
+  color: var(--secondary-button-foreground-color)!important;
+}
+
 form[role="search"] {
   display: flex;
   align-items: center;
@@ -214,17 +217,6 @@ code {
 
 #header-logo, #header-name {
   transition: 0.1s;
-}
-
-.fixed-top {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-.fixed-top-padding {
-  padding-top: 112px;
 }
 
 blockquote {
@@ -394,4 +386,52 @@ table th {
 table th, table td {
   border: 1px solid var(--secondary-region-border-color);
   padding: 4px;
+}
+
+.button {
+  display: inline-block;
+  outline: 0;
+  border-radius: var(--button-border-radius);
+  border: 1px solid var(--secondary-button-border-color);
+  padding: var(--button-padding);
+  color: var(--secondary-button-foreground-color);
+  background-color: var(--secondary-button-background-color);
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  border-color: var(--hovered-secondary-button-border-color);
+  color: var(--hovered-secondary-button-foreground-color);
+  background-color: var(--hovered-secondary-button-background-color);
+}
+
+.button:focus {
+  border-color: var(--focused-control-border-color);
+}
+
+.button:active {
+  border-color: var(--pressed-secondary-button-border-color);
+  color: var(--pressed-secondary-button-foreground-color);
+  background-color: var(--pressed-secondary-button-background-color);
+}
+
+.button.primary {
+  padding: var(--button-padding);
+  border-color: var(--primary-button-border-color);
+  color: var(--primary-button-foreground-color);
+  background-color: var(--primary-button-background-color);
+  font-weight: 500;
+}
+
+.button.primary:hover {
+  border-color: var(--hovered-primary-button-border-color);
+  color: var(--hovered-primary-button-foreground-color);
+  background-color: var(--hovered-primary-button-background-color);
+}
+
+.button.primary:active {
+  border-color: var(--pressed-primary-button-border-color);
+  color: var(--pressed-primary-button-foreground-color);
+  background-color: var(--pressed-primary-button-background-color);
 }
