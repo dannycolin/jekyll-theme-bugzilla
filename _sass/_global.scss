@@ -499,3 +499,13 @@ table th, table td {
   }
 }
 
+.warning {
+  background-color: var(--warning-message-background-color);
+  border: 1px solid var(--warning-message-border-color);
+  padding: 8px 12px;
+}
+
+.warning * {
+  vertical-align: middle;
+  display: inline-block
+}
