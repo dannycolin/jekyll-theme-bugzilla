@@ -1,15 +1,12 @@
-<header class="navbar navbar-expand-lg navbar-dark user-select-none bg-dark {{page.header.class}}">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="/">
-      <img id="header-logo" class="mr-1" src="/assets/img/logo-header.svg" {% if page.header.big %}width="64" height="96"{% else %}width="32" height="48"{% endif %}>
-      <span id="header-name" class="{% if page.header.big %}h2{% else %}h4{% endif %} m-0">{{ site.title }}</span>
+<header id="header" class="{{page.header.class}}">
+  <div class="inner">
+    <a id="header-brand" {% if page.header.big %}class="big"{% endif %} href="/">
+      <img id="header-logo" src="/assets/img/logo-header.svg" width="32" height="48">
+      <span id="header-name">{{ site.title }}</span>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="navbar-nav mr-auto">
+    <div id="navbar">
+      <ul id="navbar-nav">
         {% for item in site.data.nav %}
           {% if item.links %}
           {% assign current = false %}
@@ -38,25 +35,25 @@
           {% endif %}
         {% endfor %}
       </ul>
-      <form class="form-inline my-2 my-lg-0" role="search" method="get" action="https://www.google.com/cse">
+      <form role="search" method="get" action="https://www.google.com/cse">
         <span class="sr-only">Search bugzilla.org</span>
         <input type="hidden" name="cx" value="008043952663535741821:9whwb87ip5a">
         <span class="icon"></span>
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" name="q" aria-label="Search">
+        <input type="search" placeholder="Search" name="q" aria-label="Search">
       </form>
     </div>
   </div>
 </header>
 {% if page.breadcrumbs %}
-<nav class="breadcrumb rounded-0" aria-label="breadcrumb">
-  <div class="container">
-    <ol class="breadcrumb m-0 p-0 flex-nowrap">
+<nav id="breadcrumbs" aria-label="breadcrumb">
+  <div class="inner">
+    <ol>
       {% for breadcrumb in page.breadcrumbs %}
       {% if forloop.last != true or breadcrumb.name != page.title %}
-      <li class="breadcrumb-item"><a href="{{ breadcrumb.link }}">{{ breadcrumb.name }}</a></li>
+      <li><a href="{{ breadcrumb.link }}">{{ breadcrumb.name }}</a></li>
       {% endif %}
       {% endfor %}
-      <li class="breadcrumb-item active text-nowrap pr-3" aria-current="page">{{ page.title }}</li>
+      <li class="current" aria-current="page">{{ page.title }}</li>
     </ol>
   </div>
 </nav>
