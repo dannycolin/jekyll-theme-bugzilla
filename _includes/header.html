@@ -4,6 +4,7 @@
       <img id="header-logo" src="/assets/img/logo-header.svg" width="32" height="48">
       <span id="header-name">{{ site.title }}</span>
     </a>
+    <button id="navbar-button" title="Show Nav Menu">Show Nav Menu</button>
 
     <div id="navbar">
       <ul id="navbar-nav">
@@ -18,8 +19,8 @@
           {% if item.link == page.url %}
             {% assign current = true %}
           {% endif %}
-          <li class="nav-item dropdown{% if current == true %} active{% endif %}">
-            <a class="nav-link dropdown-toggle" {% if item.title %}title="{{ item.title }}"{% endif %} href="{% if item.link %}{{ item.link }}{% else %}#{% endif %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <li class="dropdown{% if current == true %} active{% endif %}">
+            <a class="dropdown-toggle" {% if item.title %}title="{{ item.title }}"{% endif %} href="{% if item.link %}{{ item.link }}{% else %}#{% endif %}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               {{ item.name }}
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -29,8 +30,8 @@
             </div>
           </li>
           {% else %}
-          <li class="nav-item{% if item.link == page.url %} active{% endif %}">
-            <a class="nav-link" {% if item.title %}title="{{ item.title }}"{% endif %} href="{{ item.link }}">{{ item.name }}{% if item.link == page.url %} <span class="sr-only">(current)</span>{% endif %}</a>
+          <li class="{% if item.link == page.url %} active{% endif %}">
+            <a {% if item.title %}title="{{ item.title }}"{% endif %} href="{{ item.link }}">{{ item.name }}{% if item.link == page.url %} <span class="sr-only">(current)</span>{% endif %}</a>
           </li>
           {% endif %}
         {% endfor %}

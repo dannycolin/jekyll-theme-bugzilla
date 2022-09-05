@@ -18,3 +18,15 @@ function revealDropdown(e) {
   }
   dropdown.classList.toggle('show', hidden);
 }
+
+let navbar = document.getElementById("navbar");
+navbar.classList.remove("show");
+let navbar_button = document.getElementById("navbar-button");
+
+navbar_button.addEventListener("click", revealNavmenu);
+
+function revealNavmenu(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  navbar.classList.toggle('show');
+}

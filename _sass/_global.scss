@@ -2,7 +2,6 @@ html {
   height: 100%;
 }
 
-html,
 body {
   display: flex;
   flex-flow: column;
@@ -84,12 +83,54 @@ h4 { font-size: var(--font-size-h4) }
   height: 96px;
 }
 
+#navbar-button {
+  display: none;
+}
+
+@media(max-width: 500px) {
+  #navbar-button {
+    display: block;
+    font-size: 0;
+    margin: auto 0 auto auto;
+    border: 1px solid var(--secondary-application-header-background-color);
+    border-radius: var(--button-border-radius);
+    background: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='%23c8c9ca' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='12' height='2' ry='0'/%3E%3Crect y='5' width='12' height='2'/%3E%3Crect y='10' width='12' height='2'/%3E%3C/svg%3E") var(--application-header-background-color) no-repeat 50%;
+    width: 32px;
+    height: 32px;
+    transition: 0.1s;
+  }
+  #navbar-button:hover {
+    background-color: var(--secondary-application-header-background-color);
+  }
+  #navbar, #navbar-nav {
+    flex-direction: column;
+    margin: 0!important;
+    width: 100%;
+  }
+  #header .dropdown.show .dropdown-menu {
+    display: block;
+    position:unset;
+    margin: 0 10px;
+  }
+  #navbar-nav, #navbar form, #navbar-nav, #navbar form input {
+    width: 100%;
+    margin: 5px 0;
+  }
+  #navbar:not(.show) {
+    max-height: 0;
+    flex-wrap: nowrap;
+  }
+}
+
 #navbar {
   margin-left: auto;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 100%
+  max-width: 100%;
+  max-height: 100vh;
+  transition: max-height 0.5s;
+  overflow-y: auto;
 }
 
 #navbar-nav {
