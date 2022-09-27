@@ -485,11 +485,11 @@ table th, table td {
 }
 
 .eighty {
-  max-width: 80%
+  max-width: 75%
 }
 
 .twenty {
-  max-width: 20%
+  max-width: 25%
 }
 
 @media (max-width: 800px) {
@@ -505,6 +505,7 @@ table th, table td {
   background-color: var(--warning-message-background-color);
   border: 1px solid var(--warning-message-border-color);
   padding: 8px 12px;
+  margin: 20px;
 }
 
 .warning * {
