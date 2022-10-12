@@ -3,7 +3,7 @@
   {% if page.title %}
     {%- assign title = page.title -%}
   {%- endif -%}
-  {%- capture image %}{{ site.url }}/assets/favicon/favicon.png{% endcapture -%}
+  {%- capture image %}{{ site.url }}/assets/img/banner.png{% endcapture -%}
   {% if page.image %}
     {% if page.ogtype == "profile" %}
       {%- capture image %}{{ site.url }}/assets/img/developers/{{ page.image }}{% endcapture -%}
