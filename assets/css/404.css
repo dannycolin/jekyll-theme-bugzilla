@@ -26,9 +26,16 @@ main {
   max-width: 100%;
   height: auto;
 }
+
 .fourohfour-container span {
   background-color: black;
   color: white;
+  padding: 3px;
+  font-size: var(--font-size-large);
+}
+
+.fourohfour-container span a {
+  color: #33d17a !important;
 }
 
 .fourohfour-container .inner {
