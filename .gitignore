@@ -1,4 +1,6 @@
-/bugzilla
 .DS_Store
-/_site
 .jekyll-metadata
+/.bundle
+/_site
+/bugzilla
+/vendor
