@@ -13,5 +13,8 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - tags
+  - tags.lock
+  - tags.temp
   - README.md
   - vendor/
