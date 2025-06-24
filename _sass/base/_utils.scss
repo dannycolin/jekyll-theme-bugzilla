@@ -7,15 +7,35 @@
 /* TODO:
  * - Update .sr-only to only visually hidden the element instead of removng it
  *   completely from the dom. */
-.sr-only { display: none; }
+.sr-only {
+  display: none;
+}
 
 /* font-size */
-.bz-u-font-size-1 { font-size: 0.7rem; }
-.bz-u-font-size-2 { font-size: 0.85rem; }
-.bz-u-font-size-3 { font-size: 1rem; }
-.bz-u-font-size-4 { font-size: 1.25rem; }
-.bz-u-font-size-5 { font-size: 1.5rem; }
-.bz-u-font-size-6 { font-size: 1.75rem; }
-.bz-u-font-size-7 { font-size: 2rem; }
-.bz-u-font-size-8 { font-size: 2.5rem; }
-.bz-u-font-size-9 { font-size: 3rem; }
+.bz-u-font-size-1 {
+  font-size: 0.7rem;
+}
+.bz-u-font-size-2 {
+  font-size: 0.85rem;
+}
+.bz-u-font-size-3 {
+  font-size: 1rem;
+}
+.bz-u-font-size-4 {
+  font-size: 1.25rem;
+}
+.bz-u-font-size-5 {
+  font-size: 1.5rem;
+}
+.bz-u-font-size-6 {
+  font-size: 1.75rem;
+}
+.bz-u-font-size-7 {
+  font-size: 2rem;
+}
+.bz-u-font-size-8 {
+  font-size: 2.5rem;
+}
+.bz-u-font-size-9 {
+  font-size: 3rem;
+}

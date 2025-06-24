@@ -2,6 +2,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
+/*eslint-disable css/no-invalid-at-rules */
+
 /* Base */
 @use "base/reset";
 @use "base/variables";
@@ -33,3 +35,5 @@
  * NOTE:
  * - We should only load this files in development mode */
 @use "docs/docs.scss";
+
+/*eslint-enable css/no-invalid-at-rules */

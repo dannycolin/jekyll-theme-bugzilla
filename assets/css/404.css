@@ -11,7 +11,7 @@ main {
   overflow: hidden;
   background-size: cover;
   background-position: 50% calc(100% - 10px);
-  background-image: url("/assets/img/fourohfour-bg.svg");
+  background-image: url('/assets/img/fourohfour-bg.svg');
   color: black;
   background-repeat: no-repeat;
   background-color: #2ec27e;

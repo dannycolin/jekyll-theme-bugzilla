@@ -4,14 +4,14 @@
 
 /* components/form */
 
-form[role="search"] {
+form[role='search'] {
   display: flex;
   align-items: center;
   margin: 4px;
   max-width: 100%;
 }
 
-form[role="search"] .icon {
+form[role='search'] .icon {
   font-size: 20px;
   line-height: 1;
   font-family: 'Material Icons';
@@ -22,15 +22,15 @@ form[role="search"] .icon {
   height: 20px;
 }
 
-form[role="search"] {
+form[role='search'] {
   position: relative;
 }
 
-form[role="search"] .icon::before {
+form[role='search'] .icon::before {
   content: '\E8B6';
 }
 
-form[role="search"] input {
+form[role='search'] input {
   border: 1px solid transparent;
   border-radius: 4px;
   padding: 0 8px 0 32px;
@@ -42,6 +42,6 @@ form[role="search"] input {
   max-width: 100%;
 }
 
-form[role="search"] input:focus {
+form[role='search'] input:focus {
   border-color: var(--focused-control-border-color);
 }

@@ -10,14 +10,15 @@ table {
   overflow: auto;
   width: 100%;
   overflow-x: scroll;
-  display: block
+  display: block;
 }
 
 table th {
   background-color: var(--secondary-region-background-color);
 }
 
-table th, table td {
+table th,
+table td {
   border: 1px solid var(--secondary-region-border-color);
   padding: 4px;
 }

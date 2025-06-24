@@ -24,11 +24,11 @@ main {
 }
 
 .bg-bugzilla a {
-  color: white!important;
+  color: white !important;
 }
 
 .bg-bugzilla a.button {
-  color: var(--secondary-button-foreground-color)!important;
+  color: var(--secondary-button-foreground-color) !important;
 }
 
 .profile p {
@@ -40,12 +40,13 @@ main {
   max-width: 6rem;
 }
 
-#header-logo, #header-name {
+#header-logo,
+#header-name {
   transition: 0.1s;
 }
 
 .req_new::after {
-  content: "● NEW";
+  content: '● NEW';
   display: inline-block;
   border: 1px solid var(--secondary-region-border-color);
   border-radius: 4px;
@@ -93,12 +94,13 @@ main {
   margin: auto;
 }
 
-
 .muted {
   color: var(--secondary-label-color);
 }
 
-.authors, .date, .title {
+.authors,
+.date,
+.title {
   margin: 3px 0;
 }
 
@@ -119,7 +121,8 @@ main {
   .row-inverse {
     flex-direction: column;
   }
-  .twenty, .eighty {
+  .twenty,
+  .eighty {
     max-width: 100%;
   }
 }
@@ -135,4 +138,3 @@ main {
   vertical-align: middle;
   display: inline-block;
 }
-

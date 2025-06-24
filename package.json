@@ -1,0 +1,27 @@
+{
+  "name": "jekyll-theme-bugzilla",
+  "description": "Jekyll theme for Bugzilla websites",
+  "version": "1.0.0",
+  "author": "Bugzilla",
+  "license": "MPL-2.0",
+  "homepage": "https://github.com/bugzilla/jekyll-theme#readme",
+  "bugs": {
+    "url": "https://github.com/bugzilla/jekyll-theme/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bugzilla/jekyll-theme.git"
+  },
+  "scripts": {
+    "lint": "npx eslint",
+    "prettier": "npx prettier ./{assets,_sass}/**/*.{css,js,scss} --write"
+  },
+  "devDependencies": {
+    "@eslint/css": "^0.8.1",
+    "@eslint/js": "^9.28.0",
+    "eslint": "^9.28.0",
+    "eslint-config-prettier": "^10.1.5",
+    "globals": "^16.2.0",
+    "prettier": "3.5.3"
+  }
+}

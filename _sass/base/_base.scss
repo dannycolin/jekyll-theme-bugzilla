@@ -20,9 +20,15 @@ body {
   margin: 0;
 }
 
-a { color: var(--link-text-color); }
-a:hover { color: var(--hovered-link-text-color); }
-a:visited { color: var(--visited-link-text-color); }
+a {
+  color: var(--link-text-color);
+}
+a:hover {
+  color: var(--hovered-link-text-color);
+}
+a:visited {
+  color: var(--visited-link-text-color);
+}
 
 blockquote {
   padding: 1px 16px;
@@ -37,7 +43,8 @@ pre.highlight {
   margin: 0;
   padding: 0.5rem;
 }
-.highlight, code {
+.highlight,
+code {
   border-radius: 4px;
 }
 
@@ -45,7 +52,19 @@ code {
   padding: 0.125rem 0.25rem;
 }
 
-h1, .h1 { font-size: var(--font-size-h1); }
-h2, .h2 { font-size: var(--font-size-h2); }
-h3, .h3 { font-size: var(--font-size-h3); }
-h4, .h4 { font-size: var(--font-size-h4); }
+h1,
+.h1 {
+  font-size: var(--font-size-h1);
+}
+h2,
+.h2 {
+  font-size: var(--font-size-h2);
+}
+h3,
+.h3 {
+  font-size: var(--font-size-h3);
+}
+h4,
+.h4 {
+  font-size: var(--font-size-h4);
+}
