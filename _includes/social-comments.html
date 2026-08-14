@@ -1,0 +1,15 @@
+<oom-comments
+  {% if include.comments.mastodon %}
+  mastodon={{ include.comments.mastodon }}
+  {% endif %}
+  {% if include.comments.bluesky %}
+  bluesky={{ include.comments.bluesky }}>
+  {% endif %}
+  No comments found.
+</oom-comments>
+
+<script type="module">
+  import Comments from "/assets/js/vendor/oom-comments.js";
+
+  customElements.define("oom-comments", Comments);
+</script>
