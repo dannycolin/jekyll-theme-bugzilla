@@ -201,7 +201,7 @@ async function fetchJSON(url, options = {}) {
   }
 
   if (typeof caches === "undefined") {
-    return await (await fetch(url), { headers }).json();
+    return await (await fetch(url, { headers })).json();
   }
 
   const cache = await caches.open("mastodon-comments");
